@@ -1,12 +1,13 @@
 {
-  "name": "meeting-assistant",
+  "name": "shopai-monorepo",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "description": "API e web são pacotes independentes: use npm em packages/api e packages/web.",
   "scripts": {
-    "dev": "pnpm --parallel dev",
-    "build": "pnpm --parallel build"
+    "dev:api": "npm run dev --prefix packages/api",
+    "dev:web": "npm run dev --prefix packages/web",
+    "build:api": "npm run build --prefix packages/api",
+    "build:web": "npm run build --prefix packages/web",
+    "install:all": "npm install --prefix packages/api && npm install --prefix packages/web"
   },
   "devDependencies": {
     "typescript": "^5.7.2"

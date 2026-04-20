@@ -49,7 +49,7 @@ export const authenticate = async (
       if (!row) {
         return res.status(401).json({
           error:
-            'Login mock: nenhum usuário no banco. Execute o seed da API (pnpm seed / npm run seed).',
+            'Login mock: nenhum usuário no banco. Em packages/api execute: npm run seed',
         });
       }
       req.userId = row.id;
