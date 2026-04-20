@@ -1,0 +1,16 @@
+# Dependencies (qualquer pacote: raiz, web, api, etc.)
+node_modules/
+
+# Variáveis locais (mantenha .env.example versionado)
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+
+# Build / cache (qualquer dist no repo; só .gitignore não tira o que já foi commitado)
+dist/
+**/dist/
+packages/*/dist/
+*.tsbuildinfo

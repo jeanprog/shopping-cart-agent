@@ -1,0 +1,14 @@
+{
+  "name": "meeting-assistant",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --parallel dev",
+    "build": "pnpm --parallel build"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
